@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr"> 
+  <head>
+   <meta charset="utf-8">
+   <title>ManjiriChandure_personalsite</title>
+   <link rel="Stylesheet" href="./static/CSSStyles.css">
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div >
+        <h1> user form </h1>
+    </div>
+    <div class="col-12">
+        {% comment %} <form method="get"> {% endcomment %}
+            <form method="post">
+                {% csrf_token %}
+            <div>
+                <label for=""> Value1 </label>
+                <input type="text" name="num1" value= "{{n1}}"class="form-control"/>
+            </div>
+            <div>
+                <label for=""> Value2 </label>
+                <input type="text" name="num2" value="{{n2}}" class="form-control"/>
+            </div>
+            <div class="pt-4">
+                <button type="submit"> Save</button>
+            </div>
+            <input type="text" value="{{output}}" />
+        </form>
+    </div>
+    </body
