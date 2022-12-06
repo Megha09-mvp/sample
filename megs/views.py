@@ -39,7 +39,9 @@ def user(request):
             'n2':n2,
             'output':f1
                     }
-        return HttpResponseRedirect('/about-us')
+        # return HttpResponseRedirect('/about-us')
+        url="/about-us/?output={}".format(f1)
+        return HttpResponseRedirect(url)
     except:
         pass
     return render(request,"userform.html",data)     
